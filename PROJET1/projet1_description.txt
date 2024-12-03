@@ -1,0 +1,7 @@
+This dataset contains information on a collection of credit card transactions made in India, offering a comprehensive insight into the spending habits of Indians across the country. From the gender and type of card used to make each transaction, to the city where spending was highest and even the type of expenditure made, this dataset paints a comprehensive picture of how money is spent in India today.
+
+The aim of this project is:
+* Clean up the dataset
+* Cluster the data by comparing the performance of different algorithms (Kmeans, CAH, DBSCAN, GMM...)
+* Predict “Amount” using ensemblistic methods (Randomforest, xgboost, adaboost...)
+* Develop a web site using the technology of your choice (Django, Flask, FastAPI, ...) to make predictions using the selected optimal model.

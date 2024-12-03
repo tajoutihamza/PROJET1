@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        {% if error %}
+        <div class="error">
+            {{ error }}
+        </div>
+        {% else %}
+        <div class="result">
+            <h2>{{ prediction }}</h2>
+            <div class="input-summary">
+                <h3>Input Data:</h3>
+                <ul>
+                {% for key, value in input_data.items() %}
+                    <li><strong>{{ key }}:</strong> {{ value }}</li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% endif %}
+        <a href="{{ url_for('home') }}" class="back-btn">Make Another Prediction</a>
+    </div>
+</body>
+</html>
